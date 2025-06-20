@@ -31,7 +31,6 @@ def plot_performance():
     sizes = [10, 100, 1000, 5000, 10000]
     times = []
     for size in sizes:
-      
         t = measure_time(size, -1)
         times.append(t)
         print(f"Размер: {size}, время поиска: {t:.6f} сек")
